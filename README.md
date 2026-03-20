@@ -142,3 +142,9 @@ plugins.entries.openclaw-otel-plugin.config
 - `src/trace-runtime.js`：运行时辅助函数
 - `openclaw.plugin.json`：插件清单
 - `test/trace-runtime.test.mjs`：运行时测试
+
+## Todo
+
+- `channel` 链路补充与收敛
+- `OpenClaw` 指标补充与导出
+- 协议层结构调整与兼容性梳理
