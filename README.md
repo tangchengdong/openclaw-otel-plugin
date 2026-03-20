@@ -15,7 +15,7 @@
 - OpenClaw `2026.3.12+`
 - Node.js `22.x`
 - 一个可用的 OTLP HTTP/protobuf 接收端
-- 默认示例地址：`http://127.0.0.1:9529/otel`
+- 默认示例地址：`http://localhost:9529/otel`
 
 ## 安装方式
 
@@ -51,7 +51,7 @@ git clone https://github.com/GuanceDemo/openclaw-otel-plugin.git
       "openclaw-otel-plugin": {
         "enabled": true,
         "config": {
-          "endpoint": "http://127.0.0.1:9529/otel",
+          "endpoint": "http://localhost:9529/otel",
           "protocol": "http/protobuf",
           "serviceName": "openclaw-otel-plugin",
           "flushIntervalMs": 15000,
@@ -86,7 +86,7 @@ tail -n 50 ~/.openclaw/logs/gateway.log
 正常情况下可以看到：
 
 ```text
-[openclaw-otel-plugin] trace exporter enabled (http/protobuf) -> http://127.0.0.1:9529/otel/v1/traces
+[openclaw-otel-plugin] trace exporter enabled (http/protobuf) -> http://localhost:9529/otel/v1/traces
 ```
 
 然后在 OpenClaw 中发送一条测试消息，再到链路平台中按以下条件查询：
